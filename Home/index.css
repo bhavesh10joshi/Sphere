@@ -1,0 +1,17 @@
+#topbar
+{
+    display: flex;
+}
+#btnlogo
+{
+    background-color: white;
+    border: none;
+}
+#mainlogo
+{
+    height: 6rem;
+}
+#mainlogoparent
+{
+    margin-left: 1rem;
+}
