@@ -2,7 +2,7 @@
 {
     display: flex;
 }
-#btnlogo
+#btnlogo , #homebtn , #messagebtn , #notifybtn , #profilebtn
 {
     background-color: white;
     border: none;
@@ -14,4 +14,8 @@
 #mainlogoparent
 {
     margin-left: 1rem;
+}
+#home
+{
+    height: 2rem;
 }
