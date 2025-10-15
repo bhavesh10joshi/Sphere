@@ -2,7 +2,7 @@
 {
     display: flex;
 }
-#btnlogo , #homebtn , #messagebtn , #notifybtn , #profilebtn
+#btnlogo , #homebtn , #messagebtn , #notifybtn , #profilebtn , #backbtn
 {
     background-color: white;
     border: none;
@@ -15,7 +15,11 @@
 {
     margin-left: 1rem;
 }
-#home
+#home , #message ,#notification , #profile , #back
 {
-    height: 2rem;
+    height: 3rem;
+}
+#home 
+{
+    height: 3rem;
 }
