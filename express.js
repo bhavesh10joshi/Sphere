@@ -1,29 +1,21 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const jwt = require("jsonwebtoken");
-const {z} = require("zod");
-const bcrypt = require("bcrypt");
 const app = express();
+const {StudentRouter} = require("./UserRouter/index");
 app.use(express.json());
-const JWT_SECRET="1bec47b2ae8818abe006b1b189d0d7c3";
-app.post("/user/signUp" , function(req,res)
+const cors = require("cors");
+app.use(cors());
+main();
+async function main()
 {
-    const username = req.body.username;
-    const email = req.body.email;
-    const password = req.body.password;
-
-    
-});
-app.post("/user/LogIn" , function(req , res)
-{
-
-});
-app.get("/user/profile" , function(req,res)
-{
-
-});
-app.post("/user/new-post" , function(req,res)
-{
-
-});
-
+    try{
+        await mongoose.connect("");
+        console.log("Connected");
+        app.listen(3000);
+    }
+    catch(e)
+    {
+        console.log("Error while Connection : " + e);
+    }
+}
+app.use("/User" , StudentRouter);

@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { string } = require("zod");
 const ObjectId = mongoose.ObjectId;
 const Schema = mongoose.Schema;
 mongoose.connect("mongodb+srv://josh10bhavesh:zp6aCDbTSZOd1ydK@cluster0.nd6zk.mongodb.net/Sphere?retryWrites=true&w=majority&appName=Cluster0");
@@ -37,7 +36,7 @@ const Comments = new Schema({
     UserId : ObjectId , 
     PostId : ObjectId , 
     AboutComment : String ,
-    whoCommentedId : String
+    whoCommentedId : ObjectId
 });
 const Likes = new Schema({
     UserID : ObjectId , 
@@ -50,3 +49,13 @@ const PostsModel = mongoose.model("Posts" , Posts);
 const FollowersModel = mongoose.model("Followers", Followers);
 const FollowingModel = mongoose.model("Followiong" , Following);
 const CommentsModel = mongoose.model("Comments",Comments);
+const LikesModel = mongoose.model("Likes" , Likes);
+
+module.exports = {
+    UserModel : UserModel , 
+    PostsModel : PostsModel , 
+    FollowersModel : FollowersModel , 
+    FollowingModel : FollowingModel , 
+    CommentsModel : CommentsModel , 
+    LikesModel : LikesModel
+};
