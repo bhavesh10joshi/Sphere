@@ -1,7 +1,8 @@
 # 🌐 Sphere
 
 Sphere is a modern, full-stack **social media application** where users can connect, share moments, and interact in real time. Designed with a clean, responsive interface and built for both mobile and desktop users, Sphere provides an intuitive, secure, and engaging social experience.
-
+<img width="500" height="500" alt="bighead" src="https://github.com/user-attachments/assets/c77a8460-792f-4cde-a0c6-991e39516474" />
+<img width="500" height="500" alt="namelogo" src="https://github.com/user-attachments/assets/b402cc09-eb8f-410c-8a25-0af7e1833dda" />
 ***
 
 ## ✨ Features
