@@ -53,7 +53,7 @@ About, Settings, and Preferences pages for managing privacy or UI customization 
 ### Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/Sphere.git
+git clone https://github.com/bhavesh10joshi/Sphere.git
 cd Sphere
 ```
 
