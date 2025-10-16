@@ -10,14 +10,78 @@
 <body>
     <div id="topbar">
         <div id="mainlogoparent"><button id="btnlogo"><img src="../bighead.png" alt="SphereLogo" id="mainlogo"></button></div>
-        <div id="searchbarparent"></div>
+        <div id="mainlogonameparent"><button id="btnnamelogo"><img src="../namelogo.png" alt="SphereLogo" id="mainlogoname"></button></div>
+        <div id="searchbarparent">
+            <div class="InputContainer">
+            <input
+                placeholder="Search"
+                id="input"
+                class="input"
+                name="text"
+                type="text"
+            />
+            <label class="labelforsearch" for="input">
+                <svg class="searchIcon" viewBox="0 0 512 512">
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                ></path>
+                </svg>
+                </label>
+            </div>
+        </div>
         <div id="homebtnparent"><button id="homebtn"><img src="../home.png" alt="homebtn" id="home"></button></div>
         <div id="messagebtnparent"><button id="messagebtn"><img src="../chat.png" alt="messagebtn" id="message"></button></div>
         <div id="notificationbtnparent"><button id="notifybtn"><img src="../notification.png" alt="notificationbtn" id="notification"></button></div>
         <div id="profilebtnparent"><button id="profilebtn"><img src="../user.png" alt="profilebtn" id="profile"></button></div>
         <div id="backbtnparent"><button id="backbtn"><img src="../back.png" alt="backbtn" id="back"></button></div>
     </div>
-    <div id="newpostbar"></div>
-    <div class="showposts"></div>
+    <div id="mainbar">
+        <div id="newpostbar">
+            <div id="newpostparent">
+                <div id="profilepicparent"><img src="../randompic.jpg" alt="" id="profilepic"></div>
+                <div id="newpostinputparent">
+                    <input type="text" id="newinput" placeholder="What's On Your Mind ?">
+                </div>
+            </div>
+        </div>
+        <div class="showposts">
+            <div class="post">
+                <div class="row1">
+                    <div class="propicparent"><img src="" alt="" id="propic"></div>
+                    <div class="postdetails">
+                        <div class="username"></div>
+                        <div class="timedetails">
+                            <div class="time"></div>
+                            <div class="extratime"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="descriptionpost">
+
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="postimageparent">
+
+                    </div>
+                </div>
+                <div class="row4"></div>
+                <div class="row5">
+                    <div class="likesparent">
+                        <div class="redheartimage"></div>
+                        <div class="likecount"></div>
+                    </div>
+                    <div class="commentparent">
+                        <div class="commentimage"></div>
+                        <div class="commentscount"></div>
+                    </div>
+                    <div class="shareparent">
+                        <div class="sharebtnparent"><button class="sharebtn"><img src="" alt="" class="shareimg"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
