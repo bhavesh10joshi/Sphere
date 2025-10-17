@@ -1,32 +1,68 @@
-#topbar
-{
-    display: flex;
+#topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(146, 233, 255); /* so posts don’t show through */
+  z-index: 1000; /* keep it above everything */
+  height: 6rem; /* adjust as per your logo size */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 #homebtn
 {
-    background-color: white;
+    background-color: rgb(146, 233, 255);
     border: none;
-    margin-left: 2rem;
+    margin-left: 44rem;
+    margin-top: -0.5rem;
 }
 #btnlogo ,#homebtn,#btnnamelogo, #messagebtn , #notifybtn , #profilebtn , #backbtn :hover
 {
     cursor: pointer;
+}
+#btnnamelogo
+{
+    background-color: rgb(146, 233, 255);
+    border: none;
+    margin-left: 0.6rem;
     margin-top: 1rem;
 }
-#btnlogo ,#btnnamelogo, #messagebtn , #notifybtn , #profilebtn , #backbtn
+#btnlogo 
 {
-    background-color: white;
+    background-color: rgb(146, 233, 255);
     border: none;
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: -0.1rem;
+}
+#messagebtn 
+{
+    background-color: rgb(146, 233, 255);
+    border: none;
+    margin-left: 1rem;
+    margin-top: -1rem;
+}
+#profilebtn
+{
+    background-color: rgb(146, 233, 255);
+    border: none;
+    margin-left: 1rem;
+    margin-top: -0.7rem;
+}
+#notifybtn , #backbtn
+{
+    background-color: rgb(146, 233, 255);
+    border: none;
+    margin-left: 1rem;
+    margin-top: -0.5rem;
 }
 #mainlogo
 {
-    height: 5rem;
+    height: 4rem;
 }
 #mainlogoname
 {
-    height: 6rem;
+    height: 4.8rem;
 }
 #mainlogoparent
 {
@@ -40,21 +76,20 @@
 }
 #profile
 {
-    height: 3.5rem;
-    margin-top: -0.3rem;
+    height: 2.8rem;
 }
 #message 
 {
-    height: 5rem;
-    margin-top: -1rem;
+    height: 4rem;
+    margin-top: -0.2rem;
 }
-#home ,#notification , #back
+#notification , #back
 {
-    height: 3rem;
+    height: 2.5rem;
 }
 #home 
 {
-    height: 3rem;
+    height: 2.5rem;
 }
 /*search bar*/ 
 .InputContainer {
@@ -110,13 +145,19 @@
   background-color: rgb(255, 230, 230);
   transition-duration: 0.3s;
 }
+.mainbarparent {
+  display: flex;
+  padding-right: 2rem;
+  margin-top: 7rem; /* same or slightly more than topbar height */
+}
+
 /*search bar*/ 
 #searchbarparent
 {
-    margin-left: 37rem;
-    margin-top: 1.2rem;
+    margin-left: 1rem;
+    margin-top: -1.2rem;
 }
-#mainbar
+#searchandpostbar
 {
     padding-top: 1rem;
 }
@@ -128,7 +169,7 @@
 {
     margin-left: 2rem;
     background-color: rgb(166, 220, 247);
-    width: 90rem;
+    width: 60rem;
     border-radius: 2rem;
     height: 5rem;
 }
@@ -148,7 +189,7 @@
 {
   height: 3rem;
   margin-top: 0.8rem;
-  width: 80rem;  
+  width: 50rem;  
   border: none;
   background-color: white;
   border-radius: 2rem;
@@ -156,4 +197,223 @@
   font-weight: 300;
   font-size: 1rem;
   color: black;
+}
+.post
+{
+    margin-left: 2rem;
+    background-color: rgb(166, 220, 247);
+    width: 60rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.row1
+{
+  display: flex;
+}
+.propic
+{
+  height: 3rem;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.postdetails 
+{
+  margin-top: 1rem;
+  width: 50rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+.username 
+{
+  margin-top: 0.2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+}
+.time
+{
+  margin-right: 0.5rem;
+}
+.timedetails
+{
+  font-weight: 700;
+  margin-left: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  color: rgb(89, 88, 88);
+  font-size: 0.8rem;
+}
+.row2
+{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 55rem;
+  border-radius: 2rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.descriptionpost
+{
+  margin-left: 1rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+.postimageparent
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.postimg
+{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  border-radius: 2rem;
+}
+.showposts
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.line
+{
+  background-color: black;
+  height: 0.1rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.row5
+{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 55rem;
+  border-radius: 2rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.likesparent , .commentparent , .shareparent
+{
+  display: flex;
+}
+.likebtn
+{
+  margin-left: 1rem;
+  background-color: rgb(209, 206, 206);
+  border: none;
+  border-radius: 2rem;
+}
+.commentbtn , .sharebtn
+{
+  margin-left: 20rem;
+  background-color:rgb(209, 206, 206);
+  border: none;
+  border-radius: 2rem;
+}
+.likebtn , .commentbtn , .sharebtn :hover 
+{
+  cursor: pointer;
+}
+.hollowlikeimg 
+{
+  height: 1.8rem;
+  margin-top: 0.2rem;
+}
+.hollowfilledimg ,.commentimg,.shareimg
+{
+  height: 1.6rem;
+  margin-top: 0.5rem;
+}
+.likecount , .commentscount
+{
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 1rem;
+}
+.suggestionsparent {
+  position: fixed;
+  top: 7rem; /* below topbar */
+  right: 2rem;
+  background-color: rgb(166, 220, 247);
+  border-radius: 2rem;
+  width: 27rem; /* fixed width */
+  padding-bottom: 1rem;
+  z-index: 999;
+}
+.suggestheading
+{
+  font-weight: 900;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: darkblue;
+}
+.morefollowpeople
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.peopleimg
+{
+    height: 3rem;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.peopledetails
+{
+  width:10rem;
+}
+.peoplename
+{
+  margin-top: 0.2rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+}
+.aboutpeople
+{
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  color: rgb(89, 88, 88);
+  font-size: 0.8rem;
+}
+.followbtn
+{
+  border: none;
+  background-color: rgb(8, 120, 164);
+  border-radius: 2rem;
+  width: 5rem;
+  height: 2rem;
+  color: white;
+  font-weight: 900;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.widgets
+{
+  display: flex;
 }
