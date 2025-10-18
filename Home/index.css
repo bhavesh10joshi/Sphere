@@ -14,8 +14,8 @@
 {
     background-color: rgb(146, 233, 255);
     border: none;
-    margin-left: 44rem;
     margin-top: -0.5rem;
+    margin-left: 23rem;
 }
 #btnlogo ,#homebtn,#btnnamelogo, #messagebtn , #notifybtn , #profilebtn , #backbtn :hover
 {
@@ -39,21 +39,18 @@
 {
     background-color: rgb(146, 233, 255);
     border: none;
-    margin-left: 1rem;
     margin-top: -1rem;
 }
 #profilebtn
 {
     background-color: rgb(146, 233, 255);
     border: none;
-    margin-left: 1rem;
     margin-top: -0.7rem;
 }
 #notifybtn , #backbtn
 {
     background-color: rgb(146, 233, 255);
     border: none;
-    margin-left: 1rem;
     margin-top: -0.5rem;
 }
 #mainlogo
@@ -73,23 +70,6 @@
 {
     margin-top: -1rem;
     margin-left: -1rem;
-}
-#profile
-{
-    height: 2.8rem;
-}
-#message 
-{
-    height: 4rem;
-    margin-top: -0.2rem;
-}
-#notification , #back
-{
-    height: 2.5rem;
-}
-#home 
-{
-    height: 2.5rem;
 }
 /*search bar*/ 
 .InputContainer {
@@ -172,6 +152,7 @@
     width: 60rem;
     border-radius: 2rem;
     height: 5rem;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.6);
 }
 #profilepic
 {
@@ -205,6 +186,7 @@
     width: 60rem;
     border-radius: 2rem;
     margin-top: 2rem;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.6);
 }
 .row1
 {
@@ -354,6 +336,8 @@
   width: 27rem; /* fixed width */
   padding-bottom: 1rem;
   z-index: 999;
+  box-shadow: 0 10px 5px rgba(0,0,0,1);
+  padding-bottom: 2rem;
 }
 .suggestheading
 {
@@ -373,7 +357,8 @@
   border-radius: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 5px rgba(0,0,0,0.8);
 }
 .peopleimg
 {
@@ -401,6 +386,11 @@
   color: rgb(89, 88, 88);
   font-size: 0.8rem;
 }
+.followbtn:hover
+{
+  cursor: pointer;
+  background-color: darkblue;
+}
 .followbtn
 {
   border: none;
@@ -416,4 +406,62 @@
 .widgets
 {
   display: flex;
+}
+/*widgetbtn*/
+/* From Uiverse.io by Creatlydev */ 
+.button {
+  margin-top: -1rem;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: darkblue;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
 }
