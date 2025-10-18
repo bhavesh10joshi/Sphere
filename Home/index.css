@@ -1,3 +1,13 @@
+/* For the entire page */
+body {
+  overflow: auto; /* allow scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+body::-webkit-scrollbar {
+  display: none;
+}
+/*scroll bar up*/
 #topbar {
   position: fixed;
   top: 0;
@@ -288,44 +298,20 @@
   display: flex;
   margin-bottom: 1rem;
 }
-.likesparent , .commentparent , .shareparent
+.commentparent , .shareparent
 {
   display: flex;
 }
-.likebtn
-{
-  margin-left: 1rem;
-  background-color: rgb(209, 206, 206);
-  border: none;
-  border-radius: 2rem;
-}
-.commentbtn , .sharebtn
+.sharebtn
 {
   margin-left: 20rem;
   background-color:rgb(209, 206, 206);
   border: none;
   border-radius: 2rem;
 }
-.likebtn , .commentbtn , .sharebtn :hover 
+.likebtn , .sharebtn :hover 
 {
   cursor: pointer;
-}
-.hollowlikeimg 
-{
-  height: 1.8rem;
-  margin-top: 0.2rem;
-}
-.hollowfilledimg ,.commentimg,.shareimg
-{
-  height: 1.6rem;
-  margin-top: 0.5rem;
-}
-.likecount , .commentscount
-{
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 900;
-  margin-left: 1rem;
 }
 .suggestionsparent {
   position: fixed;
@@ -464,4 +450,222 @@
 .button:hover .button__icon-svg--copy {
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
+}
+/*like*/
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 2rem;
+}
+
+.leftContainer {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(238, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.leftContainer .like {
+  color: white;
+  font-weight: 600;
+}
+
+.likeCount {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(238, 0, 0);
+  font-weight: 600;
+  position: relative;
+  background-color: white;
+}
+
+.likeCount::before {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+.Btn:hover .leftContainer {
+  background-color: rgb(219, 0, 0);
+}
+
+.Btn:active .leftContainer {
+  background-color: rgb(201, 0, 0);
+}
+
+.Btn:active .leftContainer svg {
+  transform: scale(1.15);
+  transform-origin: top;
+}
+/*commentbtn
+/* From Uiverse.io by vinodjangid07 */ 
+.bookmarkBtn {
+  width: 130px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+  margin-left: 12rem;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(103, 74, 228);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(26, 26, 26);
+  z-index: 1;
+  transition-duration: .3s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 120px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
+/*sharebtn*/
+/* From Uiverse.io by aryansagar2405 */ 
+.share-wrapper {
+  --gap: 0.5em;
+  --radius: 0.35em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  --dot-bg: #212121;
+  --dot-color: #313131;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background:
+    linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  border: 0.1em solid #313131;
+  padding: 0.5em;
+  border-radius: var(--radius);
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-left: 14rem;
+}
+
+.check[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -0.25em;
+  margin-bottom: -0.25em;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.5em;
+  fill: white;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon.active {
+  display: none;
+  fill: #2196f3;
+}
+
+.check[type="checkbox"]:checked + .container .icon.active {
+  display: inline-block;
+  animation: pop 0.5s ease-in-out;
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {
+  display: none;
+}
+
+.share-text {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
