@@ -1,6 +1,7 @@
 /* For the entire page */
 body {
   overflow: auto; /* allow scroll */
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
@@ -304,14 +305,8 @@ body::-webkit-scrollbar {
 }
 .sharebtn
 {
-  margin-left: 20rem;
-  background-color:rgb(209, 206, 206);
+  background-color: white;
   border: none;
-  border-radius: 2rem;
-}
-.likebtn , .sharebtn :hover 
-{
-  cursor: pointer;
 }
 .suggestionsparent {
   position: fixed;
@@ -376,6 +371,8 @@ body::-webkit-scrollbar {
 {
   cursor: pointer;
   background-color: darkblue;
+  transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 .followbtn
 {
@@ -388,7 +385,14 @@ body::-webkit-scrollbar {
   font-weight: 900;
   margin-left: 1rem;
   margin-top: 0.5rem;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
+.followbtn:active {
+  transform: translateY(-1px); /* gentle press */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .widgets
 {
   display: flex;
@@ -462,12 +466,21 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
   cursor: pointer;
   background-color: transparent;
   margin-left: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
-
+.Btn:hover
+{
+  transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.Btn:active {
+  transform: translateY(-1px); /* gentle press */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 .leftContainer {
   width: 60%;
   height: 100%;
@@ -529,10 +542,15 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-duration: .3s;
   overflow: hidden;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
-  margin-left: 12rem;
+  margin-left: 12rem;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.bookmarkBtn:hover
+{
+  transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .IconContainer {
@@ -579,8 +597,8 @@ body::-webkit-scrollbar {
 }
 
 .bookmarkBtn:active {
-  transform: scale(0.95);
-  transition-duration: .3s;
+  transform: translateY(-1px); /* gentle press */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 /*sharebtn*/
 /* From Uiverse.io by aryansagar2405 */ 
@@ -614,7 +632,19 @@ body::-webkit-scrollbar {
   box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin-left: 14rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
+.share-wrapper:hover
+{
+  transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.share-wrapper:active {
+  transform: translateY(-1px); /* gentle press */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .check[type="checkbox"] {
   display: none;

@@ -1,6 +1,7 @@
 /* For the entire page */
 body {
   overflow: auto; /* allow scroll */
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
@@ -357,13 +358,24 @@ body::-webkit-scrollbar {
     margin-top: 3rem;
     font-size: 2rem;
     padding-left: 4rem;
-    padding-right: 4rem;
+    padding-right: 4rem;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 .editbtn:hover
 {
     cursor: pointer;
     background-color: white;
     color: darkblue;    
+    transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.editbtn:active
+{
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;    
+    transform: translateY(-4px); /* slight lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 .allpostsdetails
 {
