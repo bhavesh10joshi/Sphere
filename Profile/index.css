@@ -262,6 +262,10 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     margin-top: 2rem;
 }
+.picborder:hover
+{
+  background-color: black;
+}
 .picborder
 {
     background-color: white;
@@ -318,4 +322,87 @@ body::-webkit-scrollbar {
 .Followersbtn , .Followingbtn , .postsbtn:hover
 {
     cursor: pointer;
+}
+.editprofilebtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allpostshead
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: black;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    width: 7.5rem;
+    padding-bottom: 0.5rem;
+}
+.userposthead
+{
+  color: white;
+}
+.editbtn
+{
+    color: white;
+    background-color: darkblue;
+    border-radius:2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    border: none;
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.editbtn:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: darkblue;    
+}
+.allpostsdetails
+{
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    background-color:  rgb(213, 215, 229);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 13rem;
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 per row */
+  gap: 10px;
+}
+.userpostbtnparent:hover
+{
+  cursor: pointer;
+  background-color: black;
+}
+.userpostbtnparent
+{
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+.userpost
+{
+  height: 17rem;
+  border-radius: 1rem;
+}
+.postsphotos
+{
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
