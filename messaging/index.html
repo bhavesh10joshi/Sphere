@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging</title>
+    <link rel="icon" type="image/png" href="../bighead.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="topbar">
+        <div id="mainlogoparent"><button id="btnlogo"><img src="../bighead.png" alt="SphereLogo" id="mainlogo"></button></div>
+        <div id="mainlogonameparent"><button id="btnnamelogo"><img src="../namelogo.png" alt="SphereLogo" id="mainlogoname"></button></div>
+        <div id="searchbarparent">
+            <div class="InputContainer">
+            <input
+                placeholder="Search"
+                id="input"
+                class="input"
+                name="text"
+                type="text"
+            />
+            <label class="labelforsearch" for="input">
+                <svg class="searchIcon" viewBox="0 0 512 512">
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                ></path>
+                </svg>
+                </label>
+            </div>
+        </div>
+        <div class="widgets">
+            <div id="homebtnparent"><button id="homebtn"><button href="#" class="button" id="homestylesbtn" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                        >
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                    >
+                    <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                </span>
+                Home
+</button>
+</button></div>
+            <div id="messagebtnparent"><button id="messagebtn"><button href="#" class="button" id="messagestylesbtn" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                        >
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                    >
+                    <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                </span>
+                Messages
+</button></button></div>
+            <div id="notificationbtnparent"><button id="notifybtn"><button href="#" class="button" id="notificationstylesbtn" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                        >
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                    >
+                    <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                </span>
+                Notification
+</button></button></div>
+            <div id="profilebtnparent"><button id="profilebtn"><button href="#" class="button" id="profilestylesbtn" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                        >
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                    >
+                    <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                </span>
+                Profile
+</button></button></div>
+            <div id="backbtnparent"><button id="backbtn"><button href="#" class="button" id="backstylesbtn" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                        >
+                        <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                    >
+                    <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+                </span>
+                Previous
+</button></button></div>  
+        </div>
+    </div>
+    <div class="mainmessagingrandparent">
+        <div class="leftsideparent">
+            <div class="messagesheadandsearch">
+
+            </div>
+            <div class="messagingtouserparent">
+                <div class="usermessagingreciever">
+                    <div class="userpic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="nameandlastmessageuserdetails">
+                        <div class="nameandtimedetails">
+                            <div class="nameuser">John Doe</div>
+                            <div class="lasttime">3:48 AM</div>
+                        </div>
+                        <div class="lastmessage">Hi , Dear John !</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="userpicandvideocalloptionbtnparent">
+            <div class="messagingnavbar">
+                <div class="userpic"><img src="" alt=""></div>
+                <div class="nameandisactive">
+                    <div class="name">John Doe</div>
+                    <div class="isactiveornot">Active Now</div>
+                </div>
+                <div class="videocallbtnparent"><button class="videocall"></button></div>
+            </div>
+            <div class="mainmessagingshowingpart"></div>
+        </div>
+        <div class="lineparent">
+            <hr class="line">
+        </div>
+        <div class="messagerecievedgrandparent">
+            <div class="messagerecievedparent">
+                <div class="messaginguserpicparent">
+                    <img src="" alt="" class="messaginguserpic">
+                </div>
+                <div class="originalmessageandtimeparent">
+                    <div class="originalmessage">Hey! How are you doing?</div>
+                    <div class="originaltime">10:42 AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="sendmessageinputandbtnparent">
+            <div class="sendmessageinput">
+                <input type="text" placeholder="Type a message ...." class="sendmessageinput">
+            </div>
+            <div class="sendthemessagebtn">
+                <button class="sendbtn"></button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
