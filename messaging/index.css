@@ -290,3 +290,126 @@ body::-webkit-scrollbar {
   align-items: self-start;
   margin-top: 0.5rem;
 }
+.userpicandvideocalloptionbtnparentgrand
+{
+  border-radius: 2rem;
+  background-color: white;
+  margin-left: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.userpicandvideocalloptionbtnparent
+{
+  padding-right: 2rem;
+  width: 200rem;
+  height: 80vh;
+}
+.messagingnavbar
+{
+  display: flex;
+}
+.userpic
+{
+  height: 3rem;
+  border-radius: 2rem;
+}
+.userpicbtn:hover
+{
+  cursor: pointer;
+}
+.userpicbtn
+{
+  background-color: white;
+  border: none;
+  margin:1rem;
+}
+.name
+{
+  color: black;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+.isactiveornot
+{
+  color: darkgreen;
+  font-family: "BBH Sans Bogle", sans-serif;
+}
+.videocall
+{
+  height: 2rem;
+}
+.videocallbtn:hover
+{
+  cursor: pointer;
+}
+.videocallbtn
+{
+  background-color: rgb(197, 192, 192);
+  border: none;
+  border-radius: 1rem;
+}
+.videocallbtnparent
+{
+  padding-left:59rem;
+  padding-top: 1.3rem;
+}
+.messagerecievedgrandparent
+{
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: rgb(179, 243, 247);
+  border-radius: 1rem;
+}
+.originalmessageandtimeparent
+{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.messagerecievedparent
+{
+  display: flex;
+}
+.messaginguserpic
+{
+  height: 2.5rem;
+  border-radius: 2rem;
+}
+.originalmessage
+{
+  color: rgb(0, 0, 60);
+  font-weight: 700;
+}
+.originaltime
+{
+  margin-top: 0.5rem;
+  color: black;
+  font-size: 0.8rem;
+}
+.messagesentgrandparent
+{
+  display: flex;
+  justify-content: flex-end;
+}
+.messagesentparent
+{
+  background-color: darkblue;
+  color: white;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.originalsenttime
+{
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.sendmessageinputandbtnparent
+{
+  mar
+}
