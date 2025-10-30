@@ -411,5 +411,34 @@ body::-webkit-scrollbar {
 }
 .sendmessageinputandbtnparent
 {
-  mar
+  display: flex;
+}
+.mainmessagingshowingpart
+{
+  height: 25rem;
+}
+.sendmessageinput
+{
+  height: 1rem;
+  width: 65rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-right: 1.5rem;
+}
+.sendbtn
+{
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  background-color: rgb(231, 225, 225);
+  border-radius: 2rem;
+  border: none;
+}
+.sendbtn:hover
+{
+  cursor: pointer;
+}
+.sendicon
+{
+  width: 2rem;
 }
