@@ -1,0 +1,28 @@
+.bbh-sans-bogle-regular {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* For the entire page */
+body {
+  overflow: auto; /* allow scroll */
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+body::-webkit-scrollbar {
+  display: none;
+}
+/*scroll bar up*/
+#topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(146, 233, 255); /* so posts don’t show through */
+  z-index: 1000; /* keep it above everything */
+  height: 6rem; /* adjust as per your logo size */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
